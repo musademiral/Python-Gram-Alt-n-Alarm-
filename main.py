@@ -20,7 +20,7 @@ while True:
     fiyat = borsa_data_alma()
     if fiyat is not None:
         print(f"{parite_ismi} Alış fiyatı ----> {fiyat}")
-        if fiyat == istenen_fiyat:
+        if fiyat >= istenen_fiyat:
                 notification.notify(
                     title = "ALTIN HEDEFİNİZE ULAŞTI",
 
@@ -35,3 +35,4 @@ while True:
     else:
 
         "Data alınamadı"
+
