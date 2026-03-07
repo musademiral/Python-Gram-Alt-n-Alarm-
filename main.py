@@ -29,7 +29,6 @@ else:
 
 while True:
     fiyat = borsa_data_alma()
-    fiyat = 7400
     if fiyat is not None:
         print(f"{parite_ismi} Alış fiyatı ----> {fiyat}")
         if action == "long" and istenen_fiyat <= fiyat:
@@ -59,4 +58,5 @@ while True:
 
         time.sleep(10)
     else:
+
         "Data alınamadı"
